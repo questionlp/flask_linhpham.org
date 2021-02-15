@@ -1,0 +1,156 @@
+@media only screen {
+    html, body {
+        font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+        font-size: 1.1rem;
+    }
+
+    html, body, .hero-body, .hero-body .title, .hero-content {
+        color: #fff;
+    }
+
+    a, a:link, a:hover, a:active {
+        color: #01579b;
+    }
+
+    a:hover {
+        text-decoration: underline dotted;
+    }
+
+    a:visited {
+        color: #311b92;
+    }
+
+    #intro.hero h1.title a:hover {
+        text-decoration: underline;
+    }
+
+    #intro.hero a.navbar-item:hover {
+        text-decoration: none;
+    }
+
+    #intro.hero.is-dark {
+        background-color: #212121;
+    }
+
+    #intro h1.title {
+        font-size: 4rem;
+    }
+
+    #intro h2.subtitle {
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    #intro span.pronouns {
+        font-size: 1.75rem;
+        font-style: italic;
+    }
+
+    #hello h1.title,
+    #projects h1.title,
+    #connect h1.title {
+        font-size: 3rem;
+    }
+
+    #hello.hero.is-dark {
+        background-color: #424242;
+    }
+
+    #hello.hero.is-dark a {
+        color: #4fc3f7 !important;
+    }
+
+    h2.sub-head {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    #projects.hero {
+        background-color: #616161;
+    }
+
+    #projects.hero .card {
+        background-color: #fafafa !important;
+    }
+
+    #projects.hero .card .content,
+    #projects.hero .card h2 {
+        color: #1a1a1a;
+    }
+
+    #projects .card-content h2 {
+        font-size: 1.5rem;
+    }
+
+    #projects footer.card-footer {
+        border-top: 1px solid #e0e0e0;
+    }
+
+    #projects .card-footer-item:not(:last-child) {
+        border-right: 1px solid #e0e0e0;
+    }
+    #connect.hero.is-info {
+        background-color: #0d47a1;
+    }
+
+    #connect .media-content * {
+        color: #202124 !important;
+    }
+
+    #connect p.buttons a.button:link,
+    #connect p.buttons a.button:hover,
+    #connect p.buttons a.button:active,
+    #connect p.buttons a.button:visited {
+        color: #000;
+    }
+}
+
+@media only screen and (max-width: 852px) {
+    html, body {
+        font-size: 1rem;
+    }
+
+    #intro h1.title {
+        font-size: 2.5rem;
+    }
+
+    #intro h2.subtitle {
+        font-size: 1.25rem;
+    }
+
+    #intro h2.title {
+        font-size: 1.25rem;
+    }
+
+    #intro span.pronouns {
+        color: #fff !important;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    #hello h1.title,
+    #projects h1.title,
+    #connect h1.title {
+        font-size: 2rem;
+    }
+
+    #projects .card-content h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media only print {
+    * {
+        background-color: initial !important;
+        color: initial !important;
+    }
+
+    section.hero {
+        page-break-after: always;
+    }
+
+    section.hero .card-content {
+        page-break-inside: avoid;
+    }
+}

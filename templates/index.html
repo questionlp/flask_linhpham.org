@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linh Pham</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    {% if ga_property_code %}
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', '{{ ga_property_code }}', 'auto');
+        ga('send', 'pageview');
+        </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    {% endif %}
+</head>
+
+<body>
+    {% include "sections/01-intro.html" %}
+
+    {% include "sections/02-hello.html" %}
+
+    {% include "sections/03-projects.html" %}
+
+    {% include "sections/04-connect.html" %}
+
+</body>
+</html>
