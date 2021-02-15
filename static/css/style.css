@@ -98,6 +98,10 @@
         color: #202124 !important;
     }
 
+    #connect .button.is-medium {
+	font-size: 1.1rem;
+    }
+
     #connect p.buttons a.button:link,
     #connect p.buttons a.button:hover,
     #connect p.buttons a.button:active,
@@ -119,10 +123,6 @@
         font-size: 1.25rem;
     }
 
-    #intro h2.title {
-        font-size: 1.25rem;
-    }
-
     #intro span.pronouns {
         color: #fff !important;
         font-size: 1.1rem;
@@ -137,6 +137,22 @@
 
     #projects .card-content h2 {
         font-size: 1.125rem;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    #intro h1.title {
+        font-size: 1.75rem;
+    }
+
+    #intro h2.subtitle {
+        font-size: 1.2rem;
+    }
+
+    #hello h1.title,
+    #projects h1.title,
+    #connect h1.title {
+        font-size: 1.5rem;
     }
 }
 
