@@ -1,7 +1,8 @@
 {
-    "python.pythonPath": "venv/bin/python",
     "files.associations": {
         "*.html": "jinja-html"
     },
-    "python.linting.pylintEnabled": true
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
 }
